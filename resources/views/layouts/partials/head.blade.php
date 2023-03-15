@@ -48,7 +48,7 @@
         z-index: 9999999999999999999999;
     }
     .bg-gray1{
-        background: aqua!important;
+        background: #55efc4!important;
     }
 </style>
 

@@ -107,6 +107,48 @@
             </div>
             @endif
 
+            @if(auth()->user()->can('master-rw'))
+            <div class="col-md-4 col-sm-6 col-12 p-1" onclick="location.href='{{ route('master-rw-list') }}';">
+                <div class="info-box bg-gradient-info master-data">
+                    <span class="info-box-icon" style="background-color:rgb(0, 98, 128); "><i class="fas fa-building text-white"></i></span>
+
+                    <div class="info-box-content">
+                        <span class="info-box-text font-size-18 text-bold">Master RW</span>
+
+                        <span class="font-size-12" style="color: rgba(175, 174, 174, 0.788); line-height:normal;">Create, read, update, and delete Master RW.</span>
+                    </div>
+                </div>
+            </div>
+            @endif
+
+            @if(auth()->user()->can('master-rt'))
+            <div class="col-md-4 col-sm-6 col-12 p-1" onclick="location.href='{{ route('master-rt-list') }}';">
+                <div class="info-box bg-gradient-info master-data">
+                    <span class="info-box-icon" style="background-color:rgb(0, 98, 128); "><i class="fas fa-building text-white"></i></span>
+
+                    <div class="info-box-content">
+                        <span class="info-box-text font-size-18 text-bold">Master RT</span>
+
+                        <span class="font-size-12" style="color: rgba(175, 174, 174, 0.788); line-height:normal;">Create, read, update, and delete Master RW.</span>
+                    </div>
+                </div>
+            </div>
+            @endif
+
+            @if(auth()->user()->can('master-jabatan'))
+            <div class="col-md-4 col-sm-6 col-12 p-1" onclick="location.href='{{ route('master-jabatan-list') }}';">
+                <div class="info-box bg-gradient-info master-data">
+                    <span class="info-box-icon" style="background-color:rgb(0, 98, 128); "><i class="fas fa-building text-white"></i></span>
+
+                    <div class="info-box-content">
+                        <span class="info-box-text font-size-18 text-bold">Master Jabatan</span>
+
+                        <span class="font-size-12" style="color: rgba(175, 174, 174, 0.788); line-height:normal;">Create, read, update, and delete Master Jabatan.</span>
+                    </div>
+                </div>
+            </div>
+            @endif
+
 
         </div>
     </div>

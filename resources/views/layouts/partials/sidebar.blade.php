@@ -40,6 +40,30 @@ span{
                 </li>
                 @endif
 
+                @if (auth()->user()->can('slider-management') || auth()->user()->can('berita-management'))
+                    <li class="menu-title" key="t-menu">Setting</li>
+                @endif
+
+
+                @if(auth()->user()->can('slider-management'))
+                <li>
+                    <a href="{{ route('slider-list') }}" class="waves-effect">
+                        <i class="mdi mdi-tools"></i>
+                        <span key="t-dashboards">Slider Management</span>
+                    </a>
+                </li>
+                @endif
+                @if(auth()->user()->can('berita-management'))
+                <li>
+                    <a href="{{ route('berita-list') }}" class="waves-effect">
+                        <i class="mdi mdi-tools"></i>
+                        <span key="t-dashboards">Berita Management</span>
+                    </a>
+                </li>
+                @endif
+
+                <li class="menu-title" key="t-menu">Master Data</li>
+
                 @if(auth()->user()->can('master-data'))
                 <li>
                     <a href="{{ route('master-data.index') }}">

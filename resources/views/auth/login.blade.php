@@ -186,7 +186,7 @@ h2 {
   opacity: .2; }
 
 .bg-perpus{
-  background:aqua;
+  background:#55efc4;
 }
         </style>
 
