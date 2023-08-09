@@ -28,7 +28,7 @@
     <div class="row mt-4">
         <div class="col-12">
             <div class="card">
-                <div class="card-header" style="background-color: #2a3042dc !important; border-radius:10px 10px 0px 0px;">
+                <div class="card-header" style="background-color: #000080 !important; border-radius:10px 10px 0px 0px;">
                     <div class="row">
                         <div class="col-lg-6 col-md-6 col-sm-6 mt-1 text-white" style="font-size:1.2rem;">
                             <span class="tx-bold tx-dark text-white text-lg">

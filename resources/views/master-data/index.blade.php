@@ -10,7 +10,7 @@
             box-shadow: 0px 0px 33px -14px rgba(0,0,0,0.75);
             -webkit-box-shadow: 0px 0px 33px -14px rgba(0,0,0,0.75);
             -moz-box-shadow: 0px 0px 33px -14px rgba(0,0,0,0.75);
-            border-right: 4px solid rgb(0, 98, 128);";
+            border-right: 4px solid #000080;";
        }
        .info-box {
             box-shadow: 0 0 1px rgba(0, 0, 0, 0.125), 0 1px 3px rgba(0, 0, 0, 0.2);
@@ -82,10 +82,10 @@
             @if(auth()->user()->can('departement-list'))
             <div class="col-md-4 col-sm-6 col-12 p-1" onclick="location.href='{{ route('departements.index') }}';">
                 <div class="info-box bg-gradient-info master-data">
-                    <span class="info-box-icon" style="background-color:rgb(0, 98, 128); "><i class="fas fa-building text-white"></i></span>
+                    <span class="info-box-icon" style="background-color:#000080; "><i class="fas fa-building text-white"></i></span>
 
                     <div class="info-box-content">
-                        <span class="info-box-text font-size-18 text-bold">Departement</span>
+                        <span class="info-box-text font-size-18 text-bold" style="color: black">Departement</span>
 
                         <span class="font-size-12" style="color: rgba(175, 174, 174, 0.788); line-height:normal;">Create, read, update, delete departement and privileges.</span>
                     </div>
@@ -96,10 +96,10 @@
             @if(auth()->user()->can('user-list'))
             <div class="col-md-4 col-sm-6 col-12 p-1" onclick="location.href='{{ route('users.index') }}';">
                 <div class="info-box bg-gradient-info master-data">
-                    <span class="info-box-icon" style="background-color:rgb(0, 98, 128); "><i class="fas fa-user text-white"></i></span>
+                    <span class="info-box-icon" style="background-color:#000080; "><i class="fas fa-user text-white"></i></span>
 
                     <div class="info-box-content">
-                        <span class="info-box-text font-size-18 text-bold">User</span>
+                        <span class="info-box-text font-size-18 text-bold" style="color: black">User</span>
 
                         <span class="font-size-12" style="color: rgba(175, 174, 174, 0.788); line-height:normal;">Create, read, update, and delete User.</span>
                     </div>

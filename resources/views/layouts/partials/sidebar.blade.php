@@ -1,13 +1,13 @@
 <!-- ========== Left Sidebar Start ========== -->
 <style>
 span{
-    color: black;
+    color: white;
 }
 #sidebar-menu{
-    background: silver;
+    background: #000080;
 }
 .simplebar-content-wrapper{
-    background: silver!important;
+    background: #000080!important;
 }
 </style>
 <div class="vertical-menu">
@@ -17,7 +17,7 @@ span{
         <!--- Sidemenu -->
         <div id="sidebar-menu">
             <!-- Left Menu Start -->
-            <ul class="metismenu list-unstyled" id="side-menu" style="background:silver">
+            <ul class="metismenu list-unstyled" id="side-menu" style="background:#000080">
                 @if(auth()->user()->can('dashboard') || auth()->user()->can('master-data') || auth()->user()->can('history-log-list'))
                 <li class="menu-title" key="t-menu">Menu</li>
                 @endif
@@ -40,6 +40,33 @@ span{
                 </li>
                 @endif
 
+                @if(auth()->user()->can('master-data'))
+                <li>
+                    <a href="{{ route('jenis-kendaraan-list') }}" class="waves-effect">
+                        <i class="mdi mdi-tools"></i>
+                        <span key="t-dashboards">Master Jenis Kendaraan</span>
+                    </a>
+                </li>
+                @endif
+
+                @if(auth()->user()->can('master-data'))
+                <li>
+                    <a href="{{ route('parkir-masuk-list') }}">
+                        <i class="mdi mdi-folder-outline"></i>
+                        <span data-key="t-dashboard">Parkir Masuk</span>
+                    </a>
+                </li>
+                @endif
+
+                @if(auth()->user()->can('master-data'))
+                <li>
+                    <a href="{{ route('parkir-keluar-list') }}">
+                        <i class="mdi mdi-folder-outline"></i>
+                        <span data-key="t-dashboard">Parkir Keluar</span>
+                    </a>
+                </li>
+                @endif
+                
                 @if(auth()->user()->can('master-data'))
                 <li>
                     <a href="{{ route('master-data.index') }}">

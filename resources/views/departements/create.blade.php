@@ -2,7 +2,7 @@
 
 @section('style')
 .bg-gray1{
-    background: aqua!important;
+    background: #000080!important;
 }
 @endsection
 

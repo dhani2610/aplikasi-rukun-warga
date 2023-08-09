@@ -186,7 +186,7 @@ h2 {
   opacity: .2; }
 
 .bg-perpus{
-  background:aqua;
+  background:#000080;
 }
         </style>
 
@@ -196,6 +196,8 @@ h2 {
       @include('sweetalert::alert')
 
     <!-- <body data-layout="horizontal"> -->
+
+      {{-- untuk mengatur halaman login  --}}
 
         <div class="d-lg-flex half">
             <div class="bg order-1 bg-perpus order-md-2" style="background-image: url(''); "></div>
@@ -216,8 +218,10 @@ h2 {
                         @csrf
                         @include('sweetalert::alert')
 
+                        {{-- disini terdapat form login user --}}
+                        {{-- untuk inputan nya username dan password  --}}
                         <div class="form-floating form-floating-custom mb-4">
-                            <input id="username" type="text" class="form-control  @error('nip') is-invalid @enderror" name="nip" value="{{ old('nip') }}" required autofocus placeholder="Enter Nip Or Nim">
+                            <input id="username" type="text" class="form-control  @error('username') is-invalid @enderror" name="username" value="{{ old('username') }}" required autofocus placeholder="Enter Username ">
                             <label for="input-username">Username</label>
                             <div class="form-floating-icon">
                             <i data-feather="users"></i>
@@ -238,10 +242,10 @@ h2 {
 
                        
                         <div class="mb-3">
-                            <button class="btn bg-perpus w-100 waves-effect waves-light font-telkom mb-2" type="submit">Masuk</button>
+                            <button class="btn bg-perpus w-100 waves-effect waves-light font-telkom mb-2" type="submit" style="color:white">Masuk</button>
                             
                             <center>
-                              <a href="{{ route('register') }}">Register</a>
+                              <a href="{{ route('register') }}" class="shadow-sm">Register</a>
                             </center>
                         </div>
                     </form>

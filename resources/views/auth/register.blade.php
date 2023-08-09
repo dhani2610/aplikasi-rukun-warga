@@ -184,6 +184,10 @@
           .control--checkbox input:disabled:checked ~ .control__indicator {
             background-color: #7e0cf5;
             opacity: .2; }
+
+            .bg-perpus{
+  background:#000080;
+}
         </style>
 
     </head>
@@ -200,10 +204,10 @@
                     <a href="index.html" class="d-block auth-logo">
                         <img src="{{ asset('img/76-764671_software-tools-icon-png-transparent-png-removebg-preview.png') }}" alt="" height="100">
                     </a>
-                        <div class="text-center">
-                            <h5 class="mb-0 font-telkom">Selamat Datang</h5>
-                            <p class="text-muted mt-2">Silahkan Masuk.</p>
-                        </div>
+                    <div class="text-center">
+                        <h5 class="mb-0 font-telkom">Selamat Datang</h5>
+                        <p class="text-muted mt-2">Silahkan Daftar.</p>
+                    </div>
                     <form class="mt-4 pt-2" method="POST" action="{{ route('register-store') }}">
                         @csrf
                         @include('components.form-message')

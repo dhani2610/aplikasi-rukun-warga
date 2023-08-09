@@ -1,8 +1,8 @@
 <header id="page-topbar">
-    <div class="navbar-header" style="background: aqua">
+    <div class="navbar-header" style="background: #000080">
         <div class="d-flex">
             <!-- LOGO -->
-            <div class="navbar-brand-box" style="background: aqua">
+            <div class="navbar-brand-box" style="background: #000080">
                 <a href="index.html" class="logo logo-light">
                     <span class="logo-sm">
                         <img src="{{ asset('img/76-764671_software-tools-icon-png-transparent-png-removebg-preview.png') }}" alt="" height="50">
@@ -19,7 +19,7 @@
                 <i class="fa fa-fw fa-bars"></i>
             </button>
         </div>
-        <div class="" style="background: aqua">
+        <div class="" style="background: #000080">
             <a href="#" class="logo logo-light">
                 {{-- <span class="logo-sm">
                     <img src="{{ asset('img/76-764671_software-tools-icon-png-transparent-png-removebg-preview.png') }} " style="width: 469px;" alt="" height="50">
@@ -64,18 +64,13 @@
             </div>
            
             <div class="dropdown d-inline-block">
-                <button type="button" class="btn header-item waves-effect" id="page-header-user-dropdown"
+                <button onclick="location.href='{{ route('profile.index') }}';" type="button" class="btn header-item waves-effect" id="page-header-user-dropdown"
                 data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <img class="rounded-circle header-profile-user" src="{{ asset('img/users/'.(Auth::user()->avatar ?? 'user.png')) }}"
                         alt="Header Avatar">
                     <span class="d-none d-xl-inline-block ms-1" key="t-henry">{{ Str::limit(Auth::user()->name, '10', '...') }}</span>
                     <i class="mdi mdi-chevron-down d-none d-xl-inline-block"></i>
                 </button>
-                <div class="dropdown-menu dropdown-menu-end">
-                    <a class="dropdown-item" href="{{ route('profile.index') }}"><i class="bx bx-user font-size-16 align-middle me-1"></i> <span key="t-profile">Profile</span></a>
-                    <div class="dropdown-divider"></div>
-                    {{-- <a class="dropdown-item text-danger" onclick="logout()" style="cursor: pointer;"><i class="bx bx-power-off font-size-16 align-middle me-1 text-danger"></i> <span key="t-logout">Logout</span></a> --}}
-                </div>
             </div>
         </div>
     </div>

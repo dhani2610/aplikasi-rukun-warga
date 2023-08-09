@@ -6,7 +6,7 @@
         cursor: pointer;
     }
     .bg-gray1{
-        background: aqua!important;
+        background: #000080!important;
     }
 </style>
 @endsection
@@ -21,7 +21,7 @@
                 <ol class="breadcrumb m-0">
                     <li class="breadcrumb-item">Home</li>
                     <li class="breadcrumb-item">/</li>
-                    <li class="breadcrumb-item active"><a href="{{ route('history-log.index') }}">{{ ($breadcumb ?? '') }}</a></li>
+                    <li class="breadcrumb-item active"><a href="{{ route('history.log') }}">{{ ($breadcumb ?? '') }}</a></li>
                 </ol>
             </div>
         </div>
