@@ -48,7 +48,11 @@
         z-index: 9999999999999999999999;
     }
     .bg-gray1{
+<<<<<<< HEAD
         background: #000080!important;
+=======
+        background: #55efc4!important;
+>>>>>>> 3b87fe0e48d65581d6a3c7f7cd8bbf8a8406e833
     }
 </style>
 

@@ -1,8 +1,15 @@
 <header id="page-topbar">
+<<<<<<< HEAD
     <div class="navbar-header" style="background: #000080">
         <div class="d-flex">
             <!-- LOGO -->
             <div class="navbar-brand-box" style="background: #000080">
+=======
+    <div class="navbar-header" style="background: #55efc4">
+        <div class="d-flex">
+            <!-- LOGO -->
+            <div class="navbar-brand-box" style="background: #55efc4">
+>>>>>>> 3b87fe0e48d65581d6a3c7f7cd8bbf8a8406e833
                 <a href="index.html" class="logo logo-light">
                     <span class="logo-sm">
                         <img src="{{ asset('img/76-764671_software-tools-icon-png-transparent-png-removebg-preview.png') }}" alt="" height="50">
@@ -19,7 +26,11 @@
                 <i class="fa fa-fw fa-bars"></i>
             </button>
         </div>
+<<<<<<< HEAD
         <div class="" style="background: #000080">
+=======
+        <div class="" style="background: #55efc4">
+>>>>>>> 3b87fe0e48d65581d6a3c7f7cd8bbf8a8406e833
             <a href="#" class="logo logo-light">
                 {{-- <span class="logo-sm">
                     <img src="{{ asset('img/76-764671_software-tools-icon-png-transparent-png-removebg-preview.png') }} " style="width: 469px;" alt="" height="50">

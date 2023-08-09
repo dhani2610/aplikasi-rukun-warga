@@ -186,7 +186,11 @@ h2 {
   opacity: .2; }
 
 .bg-perpus{
+<<<<<<< HEAD
   background:#000080;
+=======
+  background:#55efc4;
+>>>>>>> 3b87fe0e48d65581d6a3c7f7cd8bbf8a8406e833
 }
         </style>
 

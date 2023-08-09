@@ -29,9 +29,11 @@ class PermissionTableSeeder extends Seeder
             'history-log-delete',
             'profile',
             'profile-edit',
-            'aktifitas',
-            'divisi',
-            'report',
+            'slider-management',
+            'berita-management',
+            'master-rw',
+            'master-rt',
+            'master-jabatan',
         ];
 
         foreach ($permissions as $permission) {

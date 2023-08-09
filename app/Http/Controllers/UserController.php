@@ -135,6 +135,7 @@ class UserController extends Controller
         $user->assignRole($validateData['role']);
 
         return redirect()->route('users.index')->with(['success' => 'User added successfully!']);
+        
     }
 
     // disini fungsi untuk mengatur view edit data management user 
